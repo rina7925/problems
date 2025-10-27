@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 class Qeueu {
-    int size;
-    int qeue[size];
+    int size = 6;
+    int qeueu[size];
     int front = -1;
     int rear = -1;
 
-    int enqeue(int value) {
+    int enqeueu(int value) {
         if (rear == size - 1) {
             return -1;
         }
@@ -21,8 +21,8 @@ class Qeueu {
             }
         }
     }
-    int deqeue() {
-        if (front == -1 && rear == -1 && front >= rear) {
+    int deqeueu() {
+        if (front == -1 && rear == -1 ) {
             return -1;
         }
         else {
@@ -32,7 +32,7 @@ class Qeueu {
         }
     }
     int peek() {
-        if (front != -1 && rear != -1 && front <= rear) {
+        if (front != -1 && rear != -1 ) {
             return qeue[front];
         }
         else return -1;
