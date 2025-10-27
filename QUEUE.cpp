@@ -14,10 +14,10 @@ class Qeueu {
             if (rear == -1 && front == -1) {
                 front++;
                 rear++;
-                qeue[rear] = value;
+                qeueu[rear] = value;
             }
             else {
-                qeue[++rear] = value;
+                qeueu[++rear] = value;
             }
         }
     }
@@ -31,7 +31,7 @@ class Qeueu {
     }
     int peek() {
         if (front != -1 && rear != -1 ) {
-            return qeue[front];
+            return qeueu[front];
         }
         else return -1;
     }
