@@ -27,8 +27,6 @@ class Qeueu {
         }
         else {
             front++;
-
-
         }
     }
     int peek() {
@@ -37,5 +35,14 @@ class Qeueu {
         }
         else return -1;
     }
-
+}
+int main(){
+    Qeueu q1;
+    q1.enqeueu(3);
+    q1.enqeueu(4);
+    q1.deqeueu();
+    q1.enqeueu(5);
+    q1.enqeueu(7);
+    cout<<q1.peek();
+    return 0;
 }
